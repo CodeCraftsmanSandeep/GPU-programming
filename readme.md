@@ -3,7 +3,9 @@
 - To know the architecture of your system
   $uname -m 
 - lsb_release -a (will give you your linux version)
-- lspci | grep -i nvidia <br/> (to know the nvidia GPU version)
+- lspci | grep -i nvidia <br/> (to know the nvidia GPU version) <br/> my gpu version: <br/> 
+```01:00.0 VGA compatible controller: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] (rev a1)
+01:00.1 Audio device: NVIDIA Corporation Device 2291 (rev a1)```
 
 - To get device info, run deviceQuery <br/>
   sandeep@sandeep-ubuntu:~/GPU-programming$ ./cuda-samples-master/Samples/1_Utilities/deviceQuery/deviceQuery <br/>
@@ -57,7 +59,21 @@
 
   ```
 
+
+# notes
+- ![](images/image.png)
+- GPU desginers focues more on increasing throughput than on increasing latency	
+  - ![](images/gpuDesignersChoice.png)
+- Architecture:
+  - ![](images/Architecture.png)
+  - Host and device their own dedicated memeory.
+  - Host will initiate data sending between host and device and host will invoke pgu kernals. (CPU is the boss!!)
+- Typical structure of cuda program
+  - ![](typicalProgramStructure.png)
+
+
+
 # Resources
 1) Download cuda toolkit from https://developer.nvidia.com/cuda-downloads
 2) To know the cuda compute capability, see here https://developer.nvidia.com/cuda-gpus
-3) 
+3) [course](https://www.youtube.com/playlist?list=PLAwxTw4SYaPnFKojVQrmyOGFCqHTxfdv2)
