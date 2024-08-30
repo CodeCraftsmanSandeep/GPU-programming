@@ -1,4 +1,8 @@
-# Commands
+# GPU-programming
+
+Welcome to my GPU Programming Repository! 🚀 This collection showcases my journey through GPU programming, including code snippets, detailed notes, coursework, and exciting experiments. 💻✨ Dive into a world of parallel computing and explore how GPUs can transform complex computations into efficient solutions. Whether you're here to learn or collaborate, there's something for everyone. Happy coding! 🎉👨‍💻👩‍💻
+
+# Notes
 
 - To know the architecture of your system
   $uname -m 
