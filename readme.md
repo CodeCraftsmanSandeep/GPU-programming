@@ -5,6 +5,9 @@
 - lsb_release -a (will give you your linux version)
 - lspci | grep -i nvidia <br/> (to know the nvidia GPU version) <br/> ![media/my_nvidia_version.png](media/my_nvidia_version.png) 
 - To know nvcc version <br/> ![media/nvcc_compiler_version.png](media/nvcc_compiler_version.png)
+- **Cuda and nvcc**
+  - **CUDA:** A parallel computing platform and programming model by NVIDIA for using GPUs for general-purpose computing.
+  - **nvcc:** The NVIDIA CUDA Compiler used to compile CUDA code into executable binaries.
 - To get device info, run deviceQuery <br/>
   sandeep@sandeep-ubuntu:~/GPU-programming$ ./cuda-samples-master/Samples/1_Utilities/deviceQuery/deviceQuery <br/>
   ```
