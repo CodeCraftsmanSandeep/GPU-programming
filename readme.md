@@ -4,8 +4,8 @@
   $uname -m 
 - lsb_release -a (will give you your linux version)
 - lspci | grep -i nvidia <br/> (to know the nvidia GPU version) <br/> my gpu version: <br/> 
-```01:00.0 VGA compatible controller: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] (rev a1)
-01:00.1 Audio device: NVIDIA Corporation Device 2291 (rev a1)```
+	```01:00.0 VGA compatible controller: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] (rev a1)
+	01:00.1 Audio device: NVIDIA Corporation Device 2291 (rev a1)```
 
 - To get device info, run deviceQuery <br/>
   sandeep@sandeep-ubuntu:~/GPU-programming$ ./cuda-samples-master/Samples/1_Utilities/deviceQuery/deviceQuery <br/>
