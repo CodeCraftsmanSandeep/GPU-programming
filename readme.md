@@ -65,7 +65,7 @@ Welcome to my GPU Programming Repository! 🚀 This collection showcases my jour
   ```
 
 
-# notes
+# Course notes
 - ![](media/image.png)
 - GPU desginers focues more on increasing throughput than on increasing latency	
   - ![](media/gpuDesignersChoice.png)
