@@ -4,7 +4,7 @@
   $uname -m 
 - lsb_release -a (will give you your linux version)
 - lspci | grep -i nvidia <br/> (to know the nvidia GPU version) <br/> ![media/my_nvidia_version.png](media/my_nvidia_version.png) 
-- [media/nvcc_compiler_version.png](media/nvcc_compiler_version.png)
+- ![media/nvcc_compiler_version.png](media/nvcc_compiler_version.png)
 - To get device info, run deviceQuery <br/>
   sandeep@sandeep-ubuntu:~/GPU-programming$ ./cuda-samples-master/Samples/1_Utilities/deviceQuery/deviceQuery <br/>
   ```
