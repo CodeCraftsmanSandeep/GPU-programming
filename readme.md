@@ -63,6 +63,20 @@ Welcome to my GPU Programming Repository! 🚀 This collection showcases my jour
 	Result = PASS
 
   ```
+- PCI express bus:
+  - The PCI Express (PCIe) bus is a high-speed interface that connects the CPU to various peripherals, including GPUs, in a computer system. In a CPU-GPU setup, PCIe serves as the main communication channel for data transfer between the CPU and the GPU. It allows the CPU to send data, commands, and instructions to the GPU and receive results back efficiently.
+- Concepts:
+  - Software concepts:
+    - block
+    - thread
+  - Hardware concepts:
+    - SM (streaming multiprocessor)
+    - SP (streaming processor)
+- Mapping
+  - kernal --> grid
+  - block ---> SM
+  - thread --> SP
+
 
 
 # Course notes
