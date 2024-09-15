@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdio.h>
+#include <iomanip>
 using namespace std;
 
 template <typename T>
@@ -17,7 +17,7 @@ int main(){
     cin >> n;
 
     double *arr = (double *)malloc(n*sizeof(double));
-    for(int i = 0; i < n; i++) cin >> arr[i];
+    for(int i = 0; i < n; i++) cin >> std::setprecision(10) >> arr[i];
 
-    cout << find_max(arr, n) << "\n";
+    cout << std::setprecision(10)  << find_max(arr, n) << "\n";
 }

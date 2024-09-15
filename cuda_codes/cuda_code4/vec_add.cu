@@ -24,9 +24,9 @@ int main(){
         return 1;
     }
 
-    // destination, course, size, direction
+    // destination, source, size, direction
     cudaMemcpyAsync(vec1_gpu, vec1, N*sizeof(int), cudaMemcpyHostToDevice);
-    // vec1_gpu is pointer is present in stack of cpu, but points to memeory allocated on gpu 
+    // vec1_gpu is pointer present in stack of cpu, but points to memeory allocated on gpu 
 
     int* vec2_gpu;
     err = cudaMalloc(&vec2_gpu, N*sizeof(int));
