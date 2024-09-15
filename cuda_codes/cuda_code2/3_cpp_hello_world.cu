@@ -15,7 +15,7 @@ int main(){
 }
 
 /*
-The output may vary because the scheduling of thread blocks across Streaming Multiprocessors (SMs) is arbitrary.
+The output may vary because the scheduling of thread blocks across Streaming Multiprocessors (SMs) is arbitrary (or) not known.
 
 For example, one possible output might be:
     Cpp code:
