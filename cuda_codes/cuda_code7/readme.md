@@ -1,8 +1,8 @@
 # Page rank
 
 ## Introduction
-Many a times there we need a order of some elements like sorted order of weights, sorted order of research papers based on citations etc..  
-And one such case is: ranking the nodes (or) pages based on importance and page rank algorithm is one famous approaches used to solve this problem.  
+Many a times we need a order of some elements like for example: sorted order of weights, sorted order of research papers based on citations etc..  
+And one such case is: ranking the nodes (or) pages based on importance and page rank algorithm is one of the well known approaches used to rank the pages based on importance.  
 
 ## Definitions
 Here the definitions are made in the context of graphs and search engine.
