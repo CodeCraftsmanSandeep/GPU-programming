@@ -64,7 +64,7 @@ Welcome to my GPU Programming Repository! 🚀 This collection showcases my jour
 
   ```
 - PCI express bus:
-  - The PCI Express (PCIe) bus is a high-speed interface that connects the CPU to various peripherals, including GPUs, in a computer system. In a CPU-GPU setup, PCIe serves as the main communication channel for data transfer between the CPU and the GPU. It allows the CPU to send data, commands, and instructions to the GPU and receive results back efficiently.
+  - The PCI Express (PCIe) bus is a high-speed interface that connects the CPU to various peripherals, including GPUs, in a computer system. In a CPU-GPU setup, PCI serves as the main communication channel for data transfer between the CPU and the GPU. It allows the CPU to send data, commands, and instructions to the GPU and receive results back efficiently.
 - Concepts:
   - Software concepts:
     - block
@@ -76,7 +76,19 @@ Welcome to my GPU Programming Repository! 🚀 This collection showcases my jour
   - kernal --> grid
   - block ---> SM
   - thread --> SP
-
+- SIMD
+	- Scalar thread: Processes one data item at a time.
+	- Vector thread: can process multiple data items simultaneously.
+	- SIMD is typically implemented using processors with vector registers and execution units; a scalar thread issues vector instructions that execute in SIMD fashion.
+- SIMT
+	- In a SIMT architecture, rather than a single thread issuing vector instructions applied to data vectors, multiple threads issue common instructions to arbitrary data.
+	- NVIDIA GPUs execute warps of 32 parallel threads using SIMT, which enables each thread to access its own registers, to load and store from divergent addresses, and to follow divergent control flow paths. 
+- Forward compatibility.
+	- Forward compatibility refers to the ability of software or a system to work with future versions or updates without requiring changes or modifications. It ensures that users can upgrade to new versions of software or hardware without worrying about compatibility issues.
+	- Key Aspects
+		1) Design for the future: Forward compatibility involves designing systems and software with future versions or updates in mind, allowing for seamless integration and functionality.
+		2) No changes or modifications: The system or software can work with future versions without needing updates or recompilation, ensuring minimal disruption to users.
+		3) Industry standards: Using industry standards in design helps ensure compatibility with future versions of the same technology.
 
 
 # Course notes
