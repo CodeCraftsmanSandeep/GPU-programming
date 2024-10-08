@@ -52,7 +52,7 @@ __global__ void pageRankKernel(const int *row_ptr, const int *col_idx, const int
         const int start = row_ptr[v];
         const int end = row_ptr[v+1] - 1;
         const int in_degree = end - start + 1;
-        if(in_degree <= 0){
+        if(in_degree < 32*2){
             register float total_contribution = 0.0f;
             // let u = col_idx[j], then u->v is an edge in the graph
             for (int j = start; j <= end; j++) total_contribution += old_contribution[col_idx[j]];
