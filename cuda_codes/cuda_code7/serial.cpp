@@ -21,8 +21,11 @@ double rtclock()
 void pageRank(const int *row_ptr, const int *col_idx, const int* out_degree, int num_nodes, int num_edges) {
     float new_page_rank[num_nodes];
     float page_rank[num_nodes];
+
+    // Initialization
     for(int u = 0; u < num_nodes; u++) page_rank[u] = 1.0f / num_nodes;
 
+    // Page rank computation
     for(int iter = 0; iter < MAX_ITER; iter++){
         for(int v = 0; v < num_nodes; v++){
             float sum = 0.0f;
@@ -32,6 +35,7 @@ void pageRank(const int *row_ptr, const int *col_idx, const int* out_degree, int
             }
             new_page_rank[v] = (1.0f - DAMPING_FACTOR) / num_nodes + DAMPING_FACTOR * sum;
         }
+        // copying page rank to make it useful for next iteration
         for(int u = 0; u < num_nodes; u++) page_rank[u] = new_page_rank[u];
     }
 
